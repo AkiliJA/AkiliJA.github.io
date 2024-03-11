@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    position: fixed;
+    top: 0;
+    /* PROBLEM 1: Make the header stick to the top as you scroll */
+
+}
+
+.content {
+    margin: auto;
+    width: 800px;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+
+}
+
+#image-banner {
+    background-image: url('../img/sf_banner.png');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+#other-posts {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.image-card, .image-card-color-overlay {
+    width: 380px;
+    height: 200px;
+}
+
+.image-card {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+    /* PROBLEM 3: Give .image-card the appropriate position type */
+
+}
+
+.image-card:last-child {
+    margin-right: 0;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+    /* PROBLEM 4: Move the color overlay to cover the image properly */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* PROBLEM 5: What should the opacity be when there is no hover? */
+    opacity: 0.3;
+    transition: 0.3s;
+    background-color: darkblue;
+}
+
+.image-card:hover .image-card-color-overlay {
+    /* PROBLEM 5: Pick an opacity for the blue hover effect */
+    opacity: 0.5;
+}
+
+.image-card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 30px;
+    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+    color: white;
+}
+
+
+/* PROBLEM 7: Improve the typography and colors of this page! */
+body {
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#title {
+    font-size: 32px;
+    color: rgb(51, 51, 111);
+    font-weight: bold;
+}
+
+h1 {
+    margin: 25px;
+    font-size: 30px;
+    color: darkblue;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 23px;
+    color: rgb(51, 51, 111);
+}
+
+h3 {
+    margin: 20px;
+    font-size: 20px;
+    color: darkblue;
+}
+
+p {
+    margin: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
