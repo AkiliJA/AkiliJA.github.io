@@ -1,0 +1,265 @@
+body{
+    background-color: #E1E2E4;
+}
+
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Serif';
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #E1E2E4;
+}
+
+.top-nav .logo img {
+    height: 50px;
+}
+
+.user-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-nav li {
+    display: inline;
+    margin: 30px;
+}
+
+.user-nav img {
+    height: 24px;
+    vertical-align: 10px;
+}
+
+.main-nav .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    background-color: #9B807C;
+    color: #fff;
+}
+
+.main-nav .nav-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    display: block;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 60px;
+    font-family:'Iowan Old Style';
+}
+
+.hero p {
+    margin: 20px 0;
+    color: white;
+}
+
+.hero img {
+    width: 1122px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 5%;
+}
+
+.btn:hover {
+    background-color: #9B807C;
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 250px;
+}
+
+.best-sellers h2 {
+    font-family:'Iowan Old Style';
+}
+
+.new-arrivals h2 {
+    font-family:'Iowan Old Style';
+}
+
+.daily-life h2 {
+    font-family:'Iowan Old Style';
+}
+
+.best-sellers h4 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.new-arrivals h4 {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+.best-sellers, .new-arrivals {
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.best-sellers:last-child {
+    margin-right: 0;
+}
+
+.new-arrivals:last-child {
+    margin-right: 0;
+}
+
+.best-sellers img {
+    width: 100%;
+}
+
+.new-arrivals img {
+    width: 100%;
+}
+
+.R-text, .M-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    font-size: 15px;
+    color: white;
+}
+
+.S-text, .IL-text {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+.I-text, .C-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20px;
+    padding-right: 120px;
+    font-size: 15px;
+    color: white;
+}
+
+.R-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.M-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.S-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.IL-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.I-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.C-text:hover {
+    color: #B3B9C8;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.products img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 15%;
+}
+
+.daily-life {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.daily-life h4 {
+    font-weight: lighter;
+}
+
+.instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.instagram-feed img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #B3B9C8;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    line-height: 2
+}
+footer u p:hover{
+    color: #9B807C;
+    cursor: pointer;
+}
