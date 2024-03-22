@@ -1,0 +1,209 @@
+/* -- LOADING ANIMATIONS -- */
+/* Loader one: Pulse */
+.loader.one {
+	width: 100px;
+	height: 100px;
+}
+
+.loader.one .circle {
+	height: 100px;
+	width: 100px;
+	background: #E427F9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	animation: pulse 2s infinite ease-in-out;
+	/* TODO: PART 1.2 - Add pulse animation */
+}
+
+/* TODO: PART 1.3 - Delay pulse animation for circle two */
+.loader.one .second.circle {
+	animation-delay: 0.5s;
+}
+
+/* TODO: PART 1.1 - Create pulse animation */
+@keyframes pulse {
+	0% {
+	  transform: scale(0);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	  opacity: 0;
+	}
+}
+
+
+/* Loader two: Wave */
+.loader.two {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 110px;
+}
+
+.loader.two .dot {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	animation: wave 2s infinite ease-out;
+	/* TODO: PART 2 - Add wave animation */
+}
+
+/* TODO: PART 2 - Add delays and dot colors */
+.loader.two .dot:nth-child(1) {
+	animation-delay: 0s;
+	background: #F76A4D;
+}
+.loader.two .dot:nth-child(2) {
+	animation-delay: 0.25s;
+	background: #4DB1F7;
+}
+.loader.two .dot:nth-child(3) {
+	animation-delay: 0.5s;
+	background: #7DE76A;
+}
+
+/* TODO: PART 2 - Create wave animation */
+@keyframes wave {
+	0%, 100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-50px);
+	}
+}
+
+/* Loader three: Flip */
+/* TODO: PART 3 - Style the flip card */
+.flip-tile {
+    width: 100px;
+    height: 100px;
+    background-color: #F98527;
+    animation: flip-animation 2.6s infinite;
+	/* TODO: PART 3 - Add flip animation to flip card */
+}
+
+/* TODO: PART 3 - Write flip animation */
+@keyframes flip-animation {
+    0% {
+        transform: perspective(300px) rotateY(0) rotateX(0);
+    }
+    50% {
+        transform: perspective(300px) rotateY(180deg) rotateX(0);
+    }
+    100% {
+        transform: perspective(300px) rotateY(180deg) rotateX(180deg);
+    }
+}
+
+/* Loader four: Spin */
+.loader.four .rings {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.loader.four .ring {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.loader.four .ring.two {
+	width: 80%;
+	height: 80%;
+}
+.loader.four .ring.three {
+	width: 60%;
+	height: 60%;
+}
+
+.loader.four .ring .mask {
+	width: 93%;
+	height: 93%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	background: #E5F1F7;
+}
+
+.loader.four .ring .arc-container {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 10%;
+	overflow: hidden;
+	transform-origin: 50% 50%;
+	animation: spin linear infinite;
+	/* TODO: PART 4 - Add spin animation */
+}
+
+/* TODO: PART 4 - Add spin shifts for other rings */
+.loader.four .ring.one .arc-container {
+    animation-duration: 1s;
+}
+
+.loader.four .ring.two .arc-container {
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+}
+
+.loader.four .ring.three .arc-container {
+    animation-duration: 1.4s;
+    animation-delay: 0.2s;
+}
+
+.loader.four .ring .arc {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	background: #10D4C6;
+	animation: color-change linear infinite;
+	/* TODO: PART 4 - Add color animation */
+}
+.loader.four .ring.one .arc {
+    animation-duration: 2s;
+}
+
+.loader.four .ring.two .arc {
+    animation-duration: 3s;
+}
+
+.loader.four .ring.three .arc {
+    animation-duration: 4s;
+}
+
+/* TODO: PART 4 - Add spin color shifts for other rings */
+@keyframes color-change-reverse {
+    0%, 100% { background: #41EA97; }
+    25% { background: #7910D4; }
+    50% { background: #3068CD; }
+    75% { background: #10D4C6; }
+}
+
+/* TODO: PART 4 - Create spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* TODO: PART 4 - Create spin color animation */
+@keyframes color-change {
+    0%, 100% { background: #10D4C6; }
+    25% { background: #3068CD; }
+    50% { background: #7910D4; }
+    75% { background: #41EA97; }
+}
+
