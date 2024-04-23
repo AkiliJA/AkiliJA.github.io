@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Bears' Adventures</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div id="loading-page">
+            <img id="loading-img" src="assets/img/Green Bear.PNG">
+        </div>
+        <header>
+            <h2 class="logo" onclick="redirectToMain()">Bears' Adventures</h2>
+            <ul>
+                <li><a href="#" onclick="redirectToHome()">Home</a></li>
+                <li><a href="#" onclick="redirectToCharacter()">Character</a></li>
+                <li><a href="#" onclick="redirectToComics()">Comics</a></li>
+            </ul>
+        </header>
+        <div class="modal" id="modal">
+            <span class="close" id="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <p class="modal-text">Click anywhere outside to close the image</p>
+        </div> 
+        
+        
+        <div class="content">
+            <div class="card" onclick="openModal('assets/img/comic1.jpeg', 'Mid-Autumn Festival')">
+                <div class="overlay"></div>
+                <h4>Mid-Autumn Festival</h4>
+                <img src="assets/img/comic1.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic2.jpeg', 'Bring Music Back')">
+                <div class="overlay"></div>
+                <h4>Bring Music Back</h4>
+                <img src="assets/img/comic2.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic3.jpeg', 'Halloween')">
+                <div class="overlay"></div>
+                <h4>Halloween</h4>
+                <img src="assets/img/comic3.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic4.jpeg', 'Peek-A-Boo')">
+                <div class="overlay"></div>
+                <h4>Peek-A-Boo</h4>
+                <img src="assets/img/comic4.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic5.jpeg', 'Midterm Season')">
+                <div class="overlay"></div>
+                <h4>Midterm Season</h4>
+                <img src="assets/img/comic5.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic6.jpeg', 'New Year\'s Eve dinner')">
+                <div class="overlay"></div>
+                <h4>New Year's Eve dinner</h4>
+                <img src="assets/img/comic6.jpeg">
+            </div>
+
+            <div class="card" onclick="openModal('assets/img/comic7.jpeg', 'Shou Sui')">
+                <div class="overlay"></div>
+                <h4>Shou Sui</h4>
+                <img src="assets/img/comic7.jpeg">
+            </div>   
+        </div>          
+        <script src="script.js"></script>
+    </body>
+</html>
