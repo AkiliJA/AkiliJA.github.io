@@ -1,21 +1,21 @@
 function redirectToMain() {
-    window.location.href = "file:///Users/akiliwu/Desktop/final/final-starter/final1.html";
+    window.location.href = "final/final1.html";
 }
 
 function redirectToBears() {
-    window.location.href = "file:///Users/akiliwu/Desktop/final/final-starter/final2.html";
+    window.location.href = "final/final2.html";
 }
 
 function redirectToHome() {
-    window.location.href = "file:///Users/akiliwu/Desktop/final/final-starter/final2.html";
+    window.location.href = "final/final2.html";
 }
 
 function redirectToCharacter() {
-    window.location.href = "file:///Users/akiliwu/Desktop/final/final-starter/final3.html";
+    window.location.href = "final/final3.html";
 }
 
 function redirectToComics() {
-    window.location.href = "file:///Users/akiliwu/Desktop/final/final-starter/final4.html";
+    window.location.href = "final/final4.html";
 }
 
 function openModal(imgSrc, altText) {
