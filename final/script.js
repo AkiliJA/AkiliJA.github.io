@@ -1,21 +1,21 @@
 function redirectToMain() {
-    window.location.href = "final/final1.html";
+    window.location.href = "https://akilija.github.io/final/final1.html";
 }
 
 function redirectToBears() {
-    window.location.href = "final/final2.html";
+    window.location.href = "https://akilija.github.io/final/final2.html";
 }
 
 function redirectToHome() {
-    window.location.href = "final/final2.html";
+    window.location.href = "https://akilija.github.io/final/final2.html";
 }
 
 function redirectToCharacter() {
-    window.location.href = "final/final3.html";
+    window.location.href = "https://akilija.github.io/final/final3.html";
 }
 
 function redirectToComics() {
-    window.location.href = "final/final4.html";
+    window.location.href = "https://akilija.github.io/final/final4.html";
 }
 
 function openModal(imgSrc, altText) {
