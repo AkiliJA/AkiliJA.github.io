@@ -186,14 +186,16 @@ ul li a:hover {
 
 .text h1 {
     color: #161616;
-    margin: 100;
+    margin: auto;
+    margin-left: 50px;
 }
 
 .text p {
     color: #161616;
-    margin: 100;
+    margin: auto;
     font-weight: bold;
     font-size: 50px;
+    margin-left: 50px;
 }
 
 .heading {
@@ -214,6 +216,7 @@ ul li a:hover {
 body {
     background-color: #fff1c6;
     color: #3C3C3C;
+    font-family: Georgia, serif;
 }
 
 .character {
